@@ -37,11 +37,6 @@ platformio run -e esp32cam -t upload --upload-port /dev/ttyUSB0
 platformio device monitor -e esp32cam --port /dev/ttyUSB0
 ```
 
-## Catatan
-
-- Slave ini sudah bisa kirim data kamera via ESP-NOW, tetapi master saat ini belum punya handler `CameraMeta/CameraChunk`.
-- Tahap berikutnya adalah menambahkan reassembly + storage/forward pipeline di master.
-
 ## Related repositories
 
 - ESP-NOW Master (gateway): https://github.com/jahrulnr/espnow-pio-master.git
