@@ -43,6 +43,8 @@ Notes / Next steps
 
 - The current focus is improving reassembly performance, storage/forward reliability, and error handling on both the slave and master sides.
 
+- Master expects a checksum in `CameraFrameEndState.reserved` and will acknowledge frame-end; the slave uses `CAM_SEND_ACK_TIMEOUT_MS` and `CAM_CHUNK_RETRY_COUNT` (see `include/app_config.h`) to control ACK wait/retry behavior for chunked transfers.
+
 Related repositories
 --------------------
 
