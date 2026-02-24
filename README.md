@@ -2,6 +2,13 @@
 
 An ESP32-CAM based ESP-NOW slave node. This project provides a foundation for capturing JPEG frames and sending them via ESP-NOW in chunked binary messages.
 
+ESP32Cam
+------
+
+<p align="center" width="100%">
+	<img src="docs/esp32cam.png">
+</p>
+
 Status
 ------
 
@@ -28,6 +35,7 @@ Edit `include/app_config.h` to set:
 - Capture and transfer parameters: `CAM_FRAME_INTERVAL_MS`, `CAM_MAX_FRAME_BYTES`, `CAM_CHUNK_DELAY_MS`
 - JPEG quality: `CAM_JPEG_QUALITY`
 - Camera pin mapping for AI-Thinker ESP32-CAM: `CAM_PIN_*`
+
 
 Build & upload
 --------------
